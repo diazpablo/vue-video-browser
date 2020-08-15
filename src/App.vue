@@ -9,7 +9,7 @@ import axios from 'axios';
 import SearchBar from "@/components/SearchBar";
 import VideoList from "@/components/VideoList";
 
-const API_KEY = 'AIzaSyD_FbN6oqDqtBSL_6ftmV0pLlOTlq0G6gc';
+const API_KEY = 'AIzaSyAaoCD_Kd7fJUnAd8WAqzFZoJfIbdmQrCM';
 export default {
 	name: 'App',
 	components: {
@@ -28,11 +28,11 @@ export default {
 					key: API_KEY,
 					type: 'video',
 					part: 'snippet',
-					q: term
+					q: term,
+					relevanceLanguage: 'es'
 				}
 			})
 				.then(({ data }) => {
-					// console.log(data.items);
 					this.videos = data.items
 				})
 		}
