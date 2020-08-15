@@ -1,6 +1,9 @@
 <template>
 	<div>
-		<input @input="onInput" type="text" />
+		<form @submit.prevent="onSubmit">
+			<input type="text" name="search" />
+			<input type="submit" value="Search" />
+		</form>
 	</div>
 </template>
 
@@ -8,8 +11,8 @@
 export default {
 	name: 'SearchBar',
 	methods: {
-		onInput(e) {
-			this.$emit('termChange', e.target.value);
+		onSubmit(e) {
+			this.$emit('termChange', e.target.elements.search.value);
 		}
 	}
 }
