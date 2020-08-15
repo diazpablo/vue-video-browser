@@ -1,4 +1,4 @@
-# video-browser
+# Video Browser with VueJS
 
 ## Project setup
 ```
