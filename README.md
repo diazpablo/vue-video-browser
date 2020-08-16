@@ -1,6 +1,7 @@
 # Video Browser with VueJS
 
 ## Project setup
+Create a .env file with the ```VUE_APP_YOUTUBE_API_KEY``` var on it and set up and YouTube API KEY from [Google Console](https://console.developers.google.com/).
 ```
 npm install
 ```
