@@ -34,7 +34,6 @@
 		},
 		methods: {
 			onVideoSelect(video) {
-				console.log(video);
 				this.selectedVideo = video;
 			},
 			onTermChange(term) {
