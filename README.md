@@ -1,5 +1,8 @@
 # Video Browser with VueJS
 
+## Test on
+https://vuevideobrowser.netlify.app
+
 ## Project setup
 Create a .env file with the ```VUE_APP_YOUTUBE_API_KEY``` var on it and set up and YouTube API KEY from [Google Console](https://console.developers.google.com/).
 ```
